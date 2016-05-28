@@ -1,0 +1,94 @@
+.modal_div {
+  width: 100%;
+  position: fixed;
+  opacity: 0;
+  z-index: -1;
+  .modal-wrap {
+    display: table-cell;
+  }
+  @include breakpoint((to: 860px)) {
+    left: 0;
+    margin-left: 0;
+  }
+}
+.modal_close {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  right: 10px;
+  top: 10px;
+  display: block;
+  cursor: pointer;
+  background: url(../images/close-icon.png) no-repeat;
+}
+#overlay {
+  z-index: 999;
+  position: fixed;
+  background: rgba(144, 144, 144, 0.53);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  display: none;
+}
+.form {
+  margin: auto;
+  position: relative;
+  background: #fff;
+  max-width: 420px;
+  padding: 40px;
+  @include box-sizing;
+  h3 {
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+  h5 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    i {
+      color: #ff0000;
+      font-style: normal;
+      font-size: 15px;
+    }
+  }
+  .masc-control {
+    border: 1px solid #c2c2c2;
+    margin-bottom: 20px;
+    padding: 15px;
+    @include box-sizing;
+    .code {
+      font-size: 16px;
+      font-weight: bold;
+      @include inline-block(bottom);
+      line-height: 16px;
+    }
+    .form-control {
+      @include inline-block(bottom);
+      line-height: 17px;
+      letter-spacing: 2px;
+    }
+  }
+  input[type='submit'] {
+    width: 100%;
+    background: $yellow;
+    padding: 15px 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    line-height: 20px;
+    border: 1px solid #e7c706;
+    transition: .5s;
+    margin-bottom: 35px;
+    &:hover {
+      opacity: .5;
+    }
+  }
+  .modal-info {
+    color: #585858;
+    font-size: 15px;
+  }
+}
+
+
+

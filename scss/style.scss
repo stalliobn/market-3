@@ -1,0 +1,79 @@
+@import 'variables', 'mixins', 'normalize';
+@import 'parts/plagin', 'parts/header', 'parts/modal';
+html {
+  &:before {
+    content: "#{inspect($breakpoints)}";
+    display: none;
+  }
+}
+.clearfix {
+  @each $pseudo in after before {
+    &:#{$pseudo} {
+      content: '';
+      display: table;
+    }
+  }
+  &:after {
+    clear: both;
+  }
+}
+.wrapper {
+  margin: auto;
+  width: $wrapper-width;
+
+  @include breakpoint((to: desktop)) {
+    width: 94%!important;
+  }
+}
+a,
+a:visited,
+a:link,
+a:hover {
+  outline: none;
+}
+body {
+  font-size: 16px;
+  font-family: "Calibri", Arial;
+  @include breakpoint((to: 600px)) {
+    border: 0;
+  }
+}
+@font-face {
+  font-family: "Calibri";
+  src: url("../fonts/Calibri.ttf");
+}
+@font-face {
+  font-family: "PF Square Sans Pro";
+  src: url("../fonts/PFSquareSansPro-Regular.ttf");
+}
+@font-face {
+  font-family: "PF Square Sans Pro Bold";
+  src: url("../fonts/pfsquaresanspro-bold.ttf");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#section0 {
+  background: url(../images/main-bg.jpg) no-repeat center center;
+  background-size: cover;
+}
+#section2 {
+  background: url(../images/bg-section.jpg) no-repeat center center;
+  background-size: cover;
+}

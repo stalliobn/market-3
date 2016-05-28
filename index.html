@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+  <div id="modal1" class="modal_div">
+    <div class="modal-wrap">
+      <form class="form">
+        <h3>Получите консультацию<br /> по телефону</h3>
+        <span class="modal_close"></span>
+        <h5>Телефон <i>*</i></h5>
+        <div class="masc-control">
+          <span class="code">+375</span>
+          <input id="number_modal" placeholder="__ ___-__-__" type="tel" class="form-control" />
+        </div>
+        <input type="submit" value="отправить" />
+        <span class="modal-info">
+          Аттестованный специалист перезвонит вам и <br />ответит на все ваши вопросы
+        </span>
+      </form>
+    </div>
+  </div>
+  <div id="overlay"></div>
+  <header class="clearfix">
+    <div class="logo">
+      <img src="images/logo.jpg" alt="" />
+    </div>
+    <div class="menu-wrapper">
+      <span class="number">+375 44 552-92-39</span>
+      <span class="button-openner open_modal" data-href="#modal1">Заказать звонок специалиста</span>
+    </div>
+  </header>
+  <div id="fullpage">
+    <div class="section" id="section0">
+      <h1>
+        Водосточная система <b>технониколь</b> <br />
+        <span><i>Прямые</i> поставки с завода! <i>БЕСПЛАТНАЯ</i> ДОСТАВКА ПО БЕЛАРУСИ! <i>БЕСПЛАТНАЯ</i> КОНСУЛЬТАЦИЯ!</span>
+      </h1>
+      <div class="button-wrapper">
+        <div class="clearfix">
+          <div class="number-wrapper">
+            <label for="number">Ваш телефон: <b>+375</b></label>
+            <input id="number" placeholder="__ ___-__-__" type="tel" class="form-control" />
+          </div>
+          <span class="button-openner-big open_modal" data-href="#modal1">Заказать <b>звонок</b> специалиста</span>
+        </div>
+        <span class="text-massage">* найдёте цены ниже, вернём разницу!</span>
+      </div>
+    </div>
+    <div class="section" id="section1">
+      <div class="intro">
+        <h2 class="title">
+          Элементы водосточной системы
+          <span>список элементов, которые вы можете у нас заказать</span>
+        </h2>
+        <div class="row">
+          <div class="img-wrapper">
+            <img src="images/big-sprite.jpg" alt="" />
+          </div>
+        </div>
+        <div class="row">
+          <span class="button-openner-big open_modal" data-href="#modal1">Заказать <b>звонок</b> специалиста</span>
+        </div>
+      </div>
+    </div>
+    <div class="section" id="section2">
+      <div class="intro">
+        <h2 class="title white">
+          Расцветки водосточной системы
+          <span>цвета водосточной системы, которые вы можете приобрести</span>
+        </h2>
+        <div class="row">
+          <div class="item-square">
+            <div class="square white-bg"></div>
+            <span class="color">Белый<br /> RAL 9016</span>
+          </div>
+          <div class="item-square">
+            <div class="square grey"></div>
+            <span class="color">Серый<br /> RAL 9016</span>
+          </div>
+          <div class="item-square">
+            <div class="square brown"></div>
+            <span class="color">Коричневый<br /> RAL 9016</span>
+          </div>
+          <div class="item-square">
+            <div class="square red"></div>
+            <span class="color">Красный<br /> RAL 9016</span>
+          </div>
+          <div class="item-square">
+            <div class="square green"></div>
+            <span class="color">Зелёный<br /> RAL 9016</span>
+          </div>
+        </div>
+        <div class="row">
+          <span class="button-openner-big open_modal" data-href="#modal1">Заказать <b>звонок</b> специалиста</span>
+        </div>
+      </div>
+    </div>
+    <div class="section" id="section3">
+      <div class="delivery">БЕСПЛАТНАЯ<br /> ДОСТАВКА ПО БЕЛАРУСИ</div>
+      <div class="intro">
+        <h2 class="title">Успейте заказать до пятницы по старым ценам
+          <span>предыдущая партия на складе по старым ценам. новый завоз на выходных</span>
+        </h2>
+        <div class="row">
+          <div class="item">
+            <span class="icon icon-car"></span>
+            <h5>Доставка</h5>
+            <p>Бесплатно привезём ваш заказ в любую точку Беларуси при заказе от 2 млн. рублей</p>
+          </div>
+          <div class="item">
+            <span class="icon icon-user"></span>
+            <h5>Консультация</h5>
+            <p>Бесплатно проконсультируем и рассчитаем кол-во элементов для вашего дома</p>
+          </div>
+          <div class="item">
+            <span class="icon icon-home"></span>
+            <h5>Цены</h5>
+            <p>Найдёте цены ниже, вернём разницу. При объёмах ещё ниже!</p>
+          </div>
+        </div>
+        <div class="row">
+          <span class="button-openner-big open_modal" data-href="#modal1">Заказать <b>звонок</b> специалиста</span>
+        </div>
+      </div>
+      <div class="copyright">
+        <span>ООО «Профтрейдмаркет», УНП 192556203, г. Минск, ул. Тимирязева 67, офис 933</span>
+      </div>
+    </div>
+  </div>
+<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="js/jquery.fullPage.min.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
